@@ -1,0 +1,60 @@
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --bg: #0a0b0f;
+  --bg-2: #111318;
+  --bg-3: #191c24;
+  --bg-4: #20242f;
+  --border: #2a2f3d;
+  --border-2: #353b4d;
+  --text: #e8eaf2;
+  --text-2: #9aa0b8;
+  --text-3: #5f6580;
+  --accent: #4f7cff;
+  --accent-dim: rgba(79, 124, 255, 0.12);
+  --accent-hover: #6b91ff;
+  --green: #2dd4a0;
+  --green-dim: rgba(45, 212, 160, 0.12);
+  --red: #ff5c7a;
+  --red-dim: rgba(255, 92, 122, 0.12);
+  --amber: #ffb547;
+  --amber-dim: rgba(255, 181, 71, 0.1);
+  --font-mono: 'Space Mono', monospace;
+  --font-sans: 'DM Sans', sans-serif;
+  --row-h: 52px;
+  --header-h: 56px;
+}
+
+html, body, #root {
+  height: 100%;
+  background: var(--bg);
+  color: var(--text);
+  font-family: var(--font-sans);
+  font-size: 14px;
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track { background: var(--bg-2); }
+::-webkit-scrollbar-thumb { background: var(--border-2); border-radius: 3px; }
+::-webkit-scrollbar-thumb:hover { background: var(--text-3); }
+
+button {
+  font-family: var(--font-sans);
+  cursor: pointer;
+  border: none;
+  background: none;
+}
+
+input, select {
+  font-family: var(--font-sans);
+  font-size: 13px;
+}
